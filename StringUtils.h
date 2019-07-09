@@ -140,13 +140,6 @@ void StringUtilsTest(T)
 	std::cout << std::boolalpha << StringContains(s, "") << std::endl;
 	std::cout << std::boolalpha << StringContains("", s) << std::endl;
 
-	test(std::cout, "SayHello!\n");
-
-	std::fstream f;
-	f.open("out.log", std::ios::app | std::ios::binary);
-	test(f, "SayHello!\n");
-	f.close();
-
 	std::cout << StringFormat(32, "%s", "StringFormat\n");
 	char bf[2] = { 0 };
 	//std::cout << "count " << vsnprintf(bf, 1, "%s", "HelloWorld");
